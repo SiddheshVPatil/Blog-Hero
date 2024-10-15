@@ -15,7 +15,7 @@ export default function CreatePost() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const post = { title, summary, image, content, author };
-        const response = await fetch('https://blog-hero.onrender.com/user/createpost', {
+        const response = await fetch('https://blog-heros.onrender.com/user/createpost', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(post)
