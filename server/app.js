@@ -12,7 +12,7 @@ app.use(cors());
 
 console.log("hello")
 
-mongoose.connect('mongodb://localhost:27017/blog')
+mongoose.connect('mongodb+srv://siddhesh11p:Sid2003@cluster0.h3kci.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 app.post('/user/register', async(req,res)=>{
     const item = req.body;
