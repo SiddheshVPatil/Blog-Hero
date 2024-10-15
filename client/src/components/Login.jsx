@@ -11,7 +11,7 @@ export default function Login() {
     const handlelogin=async (e)=>{
         e.preventDefault();
     
-        const response =await fetch('https://blog-hero.onrender.com/user/login',{
+        const response =await fetch('https://blog-heros.onrender.com/user/login',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body: JSON.stringify({name,password})
