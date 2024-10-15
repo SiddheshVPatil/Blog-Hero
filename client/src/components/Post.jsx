@@ -10,7 +10,7 @@ export default function Post() {
   const navigate = useNavigate();
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch('https://blog-hero.onrender.com/user/getposts');
+      const response = await fetch('https://blog-heros.onrender.com/user/getposts');
       const data = await response.json();
       setPosts(data);
     }
